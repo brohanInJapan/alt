@@ -1,18 +1,64 @@
-@@import url('https://fonts.googleapis.com/css?family=Raleway');
-@@import url('https://fonts.googleapis.com/css?family=Oswald');
-
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, Sans-serif;
   width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
-.intro {
+.inro-land-stuff{
   height: 100%;
   width: 100%;
   margin: auto;
-  background-image: url('https://images.pexels.com/photos/301614/pexels-photo-301614.jpeg') no-repeat 50% 50%;
+  background: url('../images/land.jpeg') no-repeat center center;
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+
+.inro-land-stuff .inner-land-stuff {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+.content-land-stuff {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-land-stuff h1 {
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  color: #22263e;
+  font-size: 6rem;
+  padding-bottom: 6rem;
+}
+
+.intro-btn {
+  border: solid #22263e 3px;
+  border-radius: 9px;
+  padding: 10px 12px;
+  color: #22263e;
+  font-family: 'Arial Narrow', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.intro-btn:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #22263e;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  text-align: justify;
+  margin: 3%;
 }
 
 .navbar {
@@ -21,4 +67,40 @@ html, body {
 
 .footer-text {
   font-size: 12px
+}
+
+@media screen and (max-width: 1330px){
+  .content-land-stuff h1 {
+    font-size: 4.5rem;
+  }
+
+  .intro-btn {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 7px 10px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .content-land-stuff h1 {
+    font-size: 3rem;
+  }
+
+  .intro-btn {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 7px 10px;
+    color: #fff;
+    background: #22263e;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
 }
